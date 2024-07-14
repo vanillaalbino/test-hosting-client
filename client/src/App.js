@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
@@ -18,14 +17,10 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Current Count: {count}</p>
-        <div>
-          <button onClick={incrementCount}>+</button>
-          <button onClick={decrementCount}>-</button>
-        </div>
-      </header>
+      <div className="home">
+        <button onClick={incrementCount}>+</button>
+        <button onClick={decrementCount}>-</button>
+      </div>
     </div>
   );
 }
