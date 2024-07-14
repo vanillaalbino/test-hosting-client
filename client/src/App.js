@@ -17,10 +17,13 @@ function App() {
 
   return (
     <div className="App">
-      <div className="home">
-        <button onClick={incrementCount}>+</button>
-        <button onClick={decrementCount}>-</button>
-      </div>
+      <header className="App-header">
+        <p>Current Count: {count}</p>
+        <div>
+          <button onClick={incrementCount}>+</button>
+          <button onClick={decrementCount}>-</button>
+        </div>
+      </header>
     </div>
   );
 }
